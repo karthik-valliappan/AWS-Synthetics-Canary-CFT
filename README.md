@@ -2,7 +2,7 @@
 
 API Monitoring using AWS CloudWatch Synthetics Canaries. 
 
-# Synthetic-Monitoring-AWS-CloudWatch
+## Synthetic-Monitoring-AWS-CloudWatch
 
 Amazon CloudWatch Synthetics to create canaries, configurable scripts that run on a schedule, to monitor your endpoints and APIs. Deploying Cloudformation template from Gitlab-CI YAML using GitLab Runner.
 
