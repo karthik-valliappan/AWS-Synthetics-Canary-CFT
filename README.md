@@ -15,7 +15,7 @@ Use the example Petstore API. Refer to the below link.
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-from-example.html
 
 
-## Gitlab Runner
+## Gitlab Runner Configuration
 
 Configuring GitLab runner for the Gitlab Projects.
 
