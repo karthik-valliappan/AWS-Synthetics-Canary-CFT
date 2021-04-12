@@ -1,0 +1,6 @@
+DeployCFT:
+  tags:
+    - ci
+  script:
+    - aws configure set region ap-south-1
+    - aws cloudformation create-stack --stack-name canaryapitest --template-body  file://synthetics-api.yml --capabilities CAPABILITY_NAMED_IAM --parameters ParameterKey=APIUrl,ParameterValue=https:apigatewayendpointURL  ParameterKey=CanaryName,ParameterValue=apicanary
