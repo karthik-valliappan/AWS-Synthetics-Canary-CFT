@@ -56,6 +56,9 @@ Resources:
             Condition:
               StringEquals:
                 cloudwatch:namespace: CloudWatchSynthetics
+                
+#### Result Bukcet ##### 
+
   ResultsBucket:
     Type: AWS::S3::Bucket
     DeletionPolicy: Retain
@@ -81,6 +84,9 @@ Resources:
         Rules:
           - ExpirationInDays: 180
             Status: Enabled
+            
+  ##### Synthetics Canary creation #########
+  
   SyntheticsCanary:
     Type: AWS::Synthetics::Canary
     Properties:
